@@ -7,6 +7,23 @@
 	<title>Suggest Explore</title>
 	<meta name="description" content="Add Explores to Star Captain">
 	<meta name="author" content="bMorgan01">
+	
+	<script language="Javascript">
+		function hideA()
+		{
+
+			document.getElementById("A").style.visibility="hidden";
+			document.getElementById("B").style.visibility="visible";    
+
+		}
+
+		function hideB()
+		{
+			document.getElementById("B").style.visibility="hidden";
+			document.getElementById("A").style.visibility="visible";
+
+		}
+	</script>
 </head>
 
 <body>
@@ -16,11 +33,25 @@
 		<form>
 			<label for="credit">First name, full name, or username (for credits, leave blank if no credit desired):</label><br>
 			<input type="text" id="credit" name="credit"><br>
-			<label>Explore setting:</label><br>
-			<input type="radio" id="civil" name="civil" value="civil">
+			<label>Explore setting:</label><br><br>
+			<input type="radio" id="civil" name="civil" value="civil" onclick="hideB()">
 			<label for="civil">Civilization</label><br>
-			<input type="radio" id="nature" name="civil" value="nature">
-			<label for="nature">Natural</label><br>
+			<input type="radio" id="nature" name="civil" value="nature" onclick="hideA()">
+			<label for="nature">Natural</label><br><br>
+			<div id="A" style="visibility:hidden">
+				<label>Population Density:</label>
+				<input type="radio" id="sparse" name="setting" value="sparse">
+				<label for="sparse">Sparse</label><br>
+				<input type="radio" id="light" name="setting" value="light">
+				<label for="light">Light</label><br>
+				<input type="radio" id="moderate" name="setting" value="moderate">
+				<label for="moderate">Moderate</label><br>
+				<input type="radio" id="heavy" name="setting" value="heavy">
+				<label for="heavy">Heavy</label><br>
+			</div>
+			<div id="B" style="visibility:hidden">
+				
+			</div>
 		</form> 
 	</div>
 </body>

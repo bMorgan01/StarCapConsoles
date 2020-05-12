@@ -32,14 +32,14 @@
 		<h3>Please fill out the following form to suggest an Explore.<h6>
 		<form>
 			<label for="credit">First name, full name, or username (for credits, leave blank if no credit desired):</label><br>
-			<input type="text" id="credit" name="credit"><br>
-			<label>Explore setting:</label><br><br>
-			<input type="radio" id="civil" name="civil" value="civil" onclick="hideB()">
+			<input type="text" id="credit" name="credit"><br><br>
+			<label>Explore setting:</label><br>
+			<input type="radio" id="civil" name="civil" value="civil" onclick="hideB()" checked>
 			<label for="civil">Civilization</label><br>
 			<input type="radio" id="nature" name="civil" value="nature" onclick="hideA()">
 			<label for="nature">Natural</label><br><br>
-			<div id="A" style="visibility:hidden">
-				<label>Population Density:</label>
+			<div id="A">
+				<label>Population Density:</label><br>
 				<input type="radio" id="sparse" name="setting" value="sparse">
 				<label for="sparse">Sparse</label><br>
 				<input type="radio" id="light" name="setting" value="light">
@@ -50,7 +50,15 @@
 				<label for="heavy">Heavy</label><br>
 			</div>
 			<div id="B" style="visibility:hidden">
-				
+				<label>Climate/Biome:</label><br>
+				<input type="radio" id="temperate" name="setting" value="temperate">
+				<label for="temperate">Temperate</label><br>
+				<input type="radio" id="desert" name="setting" value="desert">
+				<label for="desert">Desert</label><br>
+				<input type="radio" id="ocean" name="setting" value="ocean">
+				<label for="ocean">Ocean</label><br>
+				<input type="radio" id="mountainous" name="setting" value="mountainous">
+				<label for="mountainous">Mountainous</label><br>
 			</div>
 		</form> 
 	</div>

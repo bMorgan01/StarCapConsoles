@@ -31,7 +31,7 @@
 		<h1>Hello! Welcome to the Star Captain Consoles!</h3>
 		<h3>Please fill out the following form to suggest an Explore.</h3>
 		<form>
-			<div style="position:relative">
+			<div style="width:50%;float:left;">
 				<label for="credit">First name, full name, or username (for credits, leave blank if no credit desired):</label><br>
 				<input type="text" id="credit" name="credit"><br><br>
 				<label>Explore setting:</label><br>
@@ -39,32 +39,33 @@
 				<label for="civil">Civilization</label><br>
 				<input type="radio" id="nature" name="civil" value="nature" onclick="hideA()">
 				<label for="nature">Natural</label><br><br>
-			</div>
-			<div style="position:relative">
-				<div id="A" style="position:absolute">
-					<label>Population Density:</label><br>
-					<input type="radio" id="sparse" name="setting" value="sparse">
-					<label for="sparse">Sparse</label><br>
-					<input type="radio" id="light" name="setting" value="light">
-					<label for="light">Light</label><br>
-					<input type="radio" id="moderate" name="setting" value="moderate">
-					<label for="moderate">Moderate</label><br>
-					<input type="radio" id="heavy" name="setting" value="heavy">
-					<label for="heavy">Heavy</label><br>
+			
+				<div style="position:relative">
+					<div id="A" style="position:absolute">
+						<label>Population Density:</label><br>
+						<input type="radio" id="sparse" name="setting" value="sparse">
+						<label for="sparse">Sparse</label><br>
+						<input type="radio" id="light" name="setting" value="light">
+						<label for="light">Light</label><br>
+						<input type="radio" id="moderate" name="setting" value="moderate">
+						<label for="moderate">Moderate</label><br>
+						<input type="radio" id="heavy" name="setting" value="heavy">
+						<label for="heavy">Heavy</label><br>
+					</div>
+					<div id="B" style="visibility:hidden;position:absolute;">
+						<label>Climate/Biome:</label><br>
+						<input type="radio" id="temperate" name="setting" value="temperate">
+						<label for="temperate">Temperate</label><br>
+						<input type="radio" id="desert" name="setting" value="desert">
+						<label for="desert">Desert</label><br>
+						<input type="radio" id="ocean" name="setting" value="ocean">
+						<label for="ocean">Ocean</label><br>
+						<input type="radio" id="mountainous" name="setting" value="mountainous">
+						<label for="mountainous">Mountainous</label><br>
+					</div>
 				</div>
-				<div id="B" style="visibility:hidden;position:absolute;">
-					<label>Climate/Biome:</label><br>
-					<input type="radio" id="temperate" name="setting" value="temperate">
-					<label for="temperate">Temperate</label><br>
-					<input type="radio" id="desert" name="setting" value="desert">
-					<label for="desert">Desert</label><br>
-					<input type="radio" id="ocean" name="setting" value="ocean">
-					<label for="ocean">Ocean</label><br>
-					<input type="radio" id="mountainous" name="setting" value="mountainous">
-					<label for="mountainous">Mountainous</label><br>
-				</div>
 			</div>
-			<div style="position:relative">
+			<div style="width:50%;float:left">
 				<label for="desc">Explore text:</label><br>
 				<input type="textarea" id="desc" name="desc"><br><br>
 			</div>
